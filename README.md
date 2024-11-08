@@ -17,7 +17,7 @@ To install PyPlaneTicket, just type:
 pip install PyPlaneTicket
 ```
 
-##The Lib File Structure
+## The Lib File Structure
 
 ```bash
 PyPlaneTicket/
