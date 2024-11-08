@@ -11,10 +11,34 @@
 
 ## Installation
 
-To install PyPlaneTicket, clone the repository and use `pip` to install any dependencies.
+To install PyPlaneTicket, just type:
 
 ```bash
-git clone https://github.com/yourusername/pyplaneticket.git
-cd pyplaneticket
-pip install -r requirements.txt
+pip install PyPlaneTicket
+```
+
+##The Lib File Structure
+
+```bash
+PyPlaneTicket/
+├── pyplaneticket/
+│   ├── __init__.py
+│   ├── flights.py
+│   ├── utils.py
+│   ├── exceptions.py
+│   └── airlines/                  # Directory for airline modules
+│       ├── __init__.py
+│       ├── airline_base.py        # Base class (or interface) for airlines
+│       ├── azul.py                # Specific module for the Azul airline (Azul)
+│       ├── latam.py               # Another module for the Latam airline(Latam)
+│       .
+│       .
+│       .
+└── tests/
+    ├── __init__.py
+    ├── test_azul.py               # Specific tests for the Azul airline
+    ├── test_latam.py              # Specific tests for the Latam airline
+    .
+    .
+    .
 ```
